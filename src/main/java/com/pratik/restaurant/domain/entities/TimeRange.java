@@ -11,17 +11,12 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class User {
+public class TimeRange {
 
     @Field(type = FieldType.Keyword)
-    private String id;
+    private String openTime;
 
-    @Field(type = FieldType.Text)
-    private String username;
-
-    @Field(type = FieldType.Text)
-    private String givenName;
-
-
+    @Field(type = FieldType.Keyword)
+    private String closeTime;
 
 }
