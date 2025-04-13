@@ -13,6 +13,8 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @Builder
 public class OperatingHours {
 
+    //these instances will store the opening and closing time for the week
+
     @Field(type = FieldType.Nested)
     private TimeRange monday;
 
