@@ -14,6 +14,8 @@ import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// it will add this ad entity in elastic search index
 @Document(indexName = "restaurants")
 @Data
 @AllArgsConstructor
