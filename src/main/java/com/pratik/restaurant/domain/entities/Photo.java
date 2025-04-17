@@ -1,27 +1,27 @@
 package com.pratik.restaurant.domain.entities;
 
+import lombok.AllArgsConstructor; // Lombok annotation to generate an all-args constructor
+import lombok.Builder; // Lombok annotation to enable the builder pattern for creating objects
+import lombok.Data; // Lombok annotation to generate getters, setters, toString, equals, and hashCode methods
+import lombok.NoArgsConstructor; // Lombok annotation to generate a no-args constructor
+import org.springframework.data.elasticsearch.annotations.DateFormat; // Importing Elasticsearch DateFormat for date field
+import org.springframework.data.elasticsearch.annotations.Field; // Annotation to define mapping for a field in Elasticsearch
+import org.springframework.data.elasticsearch.annotations.FieldType; // Enum to specify the type of a field in Elasticsearch
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.data.elasticsearch.annotations.DateFormat;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
+import java.time.LocalDate; // Importing LocalDate for date representation
 
-import java.time.LocalDate;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
+/**
+ * Represents a photo entity with metadata for Elasticsearch.
+ */
+@Data // Lombok annotation to generate boilerplate code (getters, setters, etc.)
+@AllArgsConstructor // Lombok annotation to generate a constructor with all fields
+@NoArgsConstructor // Lombok annotation to generate a no-args constructor
+@Builder // Lombok annotation to enable the builder pattern for this class
 public class Photo {
 
-    @Field(type = FieldType.Keyword)
-    private String url;
+    @Field(type = FieldType.Keyword) // Maps this field to a keyword field in Elasticsearch for exact matches
+    private String url; // The URL of the photo
 
-    @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second)
-    private LocalDate uploadDate;
-
-
+    @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second) // Maps this field to a date field in Elasticsearch with a specific format
+    private LocalDate uploadDate; // The date when the photo was uploaded
 }
