@@ -1,7 +1,7 @@
 package com.pratik.restaurant.domain.entities;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder; // Lombok annotation to enable the builder pattern for creating objects
+import lombok.Builder; 
 import lombok.Data; // Lombok annotation to generate getters, setters, toString, equals, and hashCode methods
 import lombok.NoArgsConstructor; // Lombok annotation to generate a no-args constructor
 import org.springframework.data.elasticsearch.annotations.DateFormat; // Importing Elasticsearch DateFormat for date field
