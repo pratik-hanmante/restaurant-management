@@ -36,6 +36,6 @@ public class Review {
     @Field(type = FieldType.Nested) // Maps the 'photos' field as a nested object in Elasticsearch
     private List<Photo> photos = new ArrayList<>();
 
-    @Field(type = FieldType.Nested) // Maps the 'writtenBy' field as a nested object in Elasticsearch
+    @Field(type = FieldType.Nested) // Maps the 'writtenBy' field as a nested object 
     private User writtenBy;
 }
