@@ -2,7 +2,7 @@ package com.pratik.restaurant.domain.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder; 
-import lombok.Data; // Lombok annotation to generate getters, setters, toString, equals, and hashCode methods
+import lombok.Data;
 import lombok.NoArgsConstructor; // Lombok annotation to generate a no-args constructor
 import org.springframework.data.elasticsearch.annotations.DateFormat; // Importing Elasticsearch DateFormat for date field
 import org.springframework.data.elasticsearch.annotations.Field; // Annotation to define mapping for a field in Elasticsearch
