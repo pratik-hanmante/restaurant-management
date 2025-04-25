@@ -18,7 +18,7 @@ import java.util.List;
 @Builder
 public class Review {
 
-    @Field(type = FieldType.Keyword) // Maps the 'id' field to a keyword field in Elasticsearch for exact matches
+    @Field(type = FieldType.Keyword) 
     private String id;
 
     @Field(type = FieldType.Text) // Maps the 'content' field to a text field in Elasticsearch for full-text search
