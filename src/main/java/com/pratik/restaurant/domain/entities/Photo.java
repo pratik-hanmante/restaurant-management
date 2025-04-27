@@ -3,7 +3,7 @@ package com.pratik.restaurant.domain.entities;
 import lombok.AllArgsConstructor;
 import lombok.Builder; 
 import lombok.Data;
-import lombok.NoArgsConstructor; // Lombok annotation to generate a no-args constructor
+import lombok.NoArgsConstructor; // Lombok annotation to generate a no-args 
 import org.springframework.data.elasticsearch.annotations.DateFormat; // Importing Elasticsearch DateFormat for date field
 import org.springframework.data.elasticsearch.annotations.Field; // Annotation to define mapping for a field in Elasticsearch
 import org.springframework.data.elasticsearch.annotations.FieldType; // Enum to specify the type of a field in Elasticsearch
