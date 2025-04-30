@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder; 
 import lombok.Data;
 import lombok.NoArgsConstructor; 
-import org.springframework.data.elasticsearch.annotations.DateFormat; // Importing Elasticsearch DateFormat for date field
+import org.springframework.data.elasticsearch.annotations.DateFormat; // Importing Elasticsearch DateFormat 
 import org.springframework.data.elasticsearch.annotations.Field; // Annotation to define mapping for a field in Elasticsearch
 import org.springframework.data.elasticsearch.annotations.FieldType; // Enum to specify the type of a field in Elasticsearch
 
