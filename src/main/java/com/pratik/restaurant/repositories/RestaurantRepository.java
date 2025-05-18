@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RestaurantRepository extends ElasticsearchRepository<Restaurant, String> {
-        // custom queries
+
 }
