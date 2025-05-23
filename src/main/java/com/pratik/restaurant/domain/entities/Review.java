@@ -21,7 +21,7 @@ public class Review {
     @Field(type = FieldType.Keyword) 
     private String id;
 
-    @Field(type = FieldType.Text) // Maps the 'content' field to a text field in Elasticsearch
+    @Field(type = FieldType.Text) // Maps the 'content' field to a text field
     private String content;
 
     @Field(type = FieldType.Integer) // Maps the 'rating' field to an integer type in Elasticsearch
