@@ -33,7 +33,7 @@ public class Review {
     @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second) // Maps the 'lastEdited' field to a date field with format "date_hour_minute_second" in Elasticsearch
     private LocalDateTime lastEdited;
 
-    @Field(type = FieldType.Nested) // Maps the 'photos' field as a nested object in Elasticsearch
+    @Field(type = FieldType.Nested) // Maps the 'photos' field as a nested object
     private List<Photo> photos = new ArrayList<>();
 
     @Field(type = FieldType.Nested) // Maps the 'writtenBy' field as a nested object 
