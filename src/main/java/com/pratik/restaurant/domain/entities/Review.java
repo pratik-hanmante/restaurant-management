@@ -27,7 +27,7 @@ public class Review {
     @Field(type = FieldType.Integer) // Maps the 'rating' field to an integer type in Elasticsearch
     private Integer rating;
 
-    @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second) // Maps the 'datePosted' field to a date field with format "date_hour_minute_second" in Elasticsearch
+    @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second) // Maps the 'datePosted' field to a date field with format "date_hour_minute_second"
     private LocalDateTime datePosted;
 
     @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second) // Maps the 'lastEdited' field to a date field with format "date_hour_minute_second"
