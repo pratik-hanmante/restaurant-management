@@ -16,7 +16,7 @@ import java.time.LocalDate; // Importing LocalDate for date representation
 @Data // Lombok annotation to generate boilerplate code (getters, setters, etc.)
 @AllArgsConstructor // Lombok annotation to generate a constructor with all fields
 @NoArgsConstructor // Lombok annotation to generate a no-args constructor
-@Builder // Lombok annotation to enable the builder pattern for this class
+@Builder // Lombok annotation to enable the builder pattern
 public class Photo {
 
     @Field(type = FieldType.Keyword) // Maps this field to a keyword field in Elasticsearch for exact matches
