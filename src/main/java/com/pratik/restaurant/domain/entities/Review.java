@@ -24,7 +24,7 @@ public class Review {
     @Field(type = FieldType.Text) // Maps the 'content' field to a text field
     private String content;
 
-    @Field(type = FieldType.Integer) // Maps the 'rating' field to an integer type in Elasticsearch
+    @Field(type = FieldType.Integer) // Maps the 'rating' field to an integer
     private Integer rating;
 
     @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second) // Maps the 'datePosted' field to a date field with format "date_hour_minute_second"
