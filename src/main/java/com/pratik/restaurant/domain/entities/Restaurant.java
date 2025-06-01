@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-// it will add this entity in elastic search index
+// it will add this entity in elasticSearch index
 @Document(indexName = "restaurants")
 @Data
 @AllArgsConstructor
