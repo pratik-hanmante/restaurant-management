@@ -1,5 +1,6 @@
 package com.pratik.restaurant.exceptions;
 
+//runtime exception to avoid checked exceptions
 public class BaseException extends RuntimeException{
 
     public BaseException() {
