@@ -8,7 +8,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration // Indicates this class contains Spring bean definitions
+@Configuration
 @EnableWebSecurity // Enables Spring Security for the application
 public class SecurityConfig {
 
