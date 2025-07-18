@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.server.resource.authentication.JwtAut
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-@EnableWebSecurity // Enables Spring Security for the application
+@EnableWebSecurity // Enables Spring Security for the app
 public class SecurityConfig {
 
     // Defines the security filter chain for HTTP requests
