@@ -16,7 +16,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-                // Step 1: Enforce that every HTTP request must be authenticated
+             
                 .authorizeHttpRequests(auth ->
                         auth.anyRequest().authenticated()
                 )
